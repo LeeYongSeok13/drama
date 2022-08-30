@@ -1,0 +1,48 @@
+.Wrap {}
+
+.container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#Header {
+    height: 165.5px;
+    line-height: 63px;
+    background: url('../img/header_background.jpg') no-repeat center center/cover;
+}
+
+#Header .TopBanner h1 {
+    float: left;
+}
+
+#Header .TopBanner ul {
+    display: flex;
+    float: left;
+    gap: 50px;
+    margin: 0 0 0 50px;
+}
+
+#Header .TopBanner ul li {
+    color: #fff;
+}
+
+#Header .Drama h1 img {
+    width: 50%;
+}
+
+#Header .Drama .txt {
+    display: block;
+    color: #fff;
+    line-height: 51.25px;
+}
+
+#Header .Drama h2 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#Header .Drama p {
+    font-size: 15px;
+    font-weight: 500;
+}
