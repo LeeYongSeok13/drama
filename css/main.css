@@ -19,7 +19,7 @@
 #Header .TopBanner ul {
     display: flex;
     float: left;
-    gap: 50px;
+    gap: 30px;
     margin: 0 0 0 50px;
 }
 
@@ -45,4 +45,241 @@
 #Header .Drama p {
     font-size: 15px;
     font-weight: 500;
+}
+
+#Main {
+    padding: 50px 0;
+}
+
+#Main .left {
+    float: left;
+    width: calc(100% / 2);
+}
+
+#Main .left .top_strong {
+    display: block;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0 0 30px 0;
+}
+
+#Main .left h2 {
+    font-size: 45px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+}
+
+#Main .left p {
+    font-size: 13px;
+    font-weight: 300;
+    margin: 0 0 29px 0;
+}
+
+#Main .left span {
+    display: inline-block;
+    padding: 5px 15px;
+    border: 1px solid #6666ff;
+    color: #6666ff;
+    margin: 5px 10px 0 0;
+}
+
+#Main .right {
+    float: left;
+    width: calc(100% / 2);
+}
+
+#Main .right .swiper-wrapper figure {
+    width: 100%;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#Main .right .right_slider .swiper-wrapper .itm01 {
+    background-image: url('../img/main_visual01.jpg');
+}
+
+#Main .right .right_slider .swiper-wrapper .itm02 {
+    background-image: url('../img/main_visual02.jpg');
+}
+
+#Main .right .right_slider .swiper-wrapper .itm03 {
+    background-image: url('../img/main_visual03.jpg');
+}
+
+#Main .right .right_slider .swiper-pagination .swiper-pagination-bullet {
+    background: #fff;
+    border: 1px solid #ddd;
+}
+
+#Navigation {
+    line-height: 50px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+#Navigation .container ul {
+    display: flex;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+#Navigation .container ul li {
+    position: relative;
+    font-size: 20px;
+}
+
+#Navigation .container ul li~li::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 1px;
+    height: 13px;
+    top: 50%;
+    left: -15px;
+    transform: translateY(-50%);
+    background: #000;
+}
+
+#Navigation .container ul li::after {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 47px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 3px;
+    background: #6666ff;
+    transition: 0.5s;
+}
+
+#Navigation .container ul li:hover::after {
+    width: 100%;
+}
+
+#Information {
+    padding: 100px 0;
+    height: 590px;
+}
+
+#Information .container {
+    display: block;
+}
+
+#Information .information_head {
+    position: relative;
+    display: flex;
+    width: 1200px;
+    justify-content: space-between;
+    padding: 0 0 19px 0;
+    border-bottom: 1px solid #6666ff;
+}
+
+#Information .information_head h2 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#Information .information_head a {
+    align-items: center;
+    padding: 5px 15px;
+    border: 1px solid #6666ff;
+    color: #6666ff;
+}
+
+#Information .information_main {
+    margin: 20px 0 0 0;
+}
+
+#Information .information_main .left {
+    float: left;
+    width: calc(100% / 2);
+    height: 282.66px;
+}
+
+#Information .information_main .left h2 {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.414;
+    margin: 0 0 20px 0;
+}
+
+#Information .information_main .left a {
+    font-size: 13px;
+    padding: 3px 15px;
+    border: 1px solid #6666ff;
+    color: #6666ff;
+}
+
+#Information .information_main .right {
+    float: left;
+    width: calc(100% / 2);
+    height: 282.66px;
+}
+
+#Information .information_main .right h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+}
+
+#Information .information_main .right .people {
+    display: flex;
+    gap: 30px;
+}
+
+#Information .information_main .right .people figure {
+    width: 30%;
+    margin: 0 0 20px 0;
+}
+
+#Information .information_main .right .people figure img {
+    border-radius: 50%;
+}
+
+#Information .information_main .right .people figure p {
+    text-align: center;
+}
+
+#Information .information_main .right a {
+    font-size: 13px;
+    padding: 3px 15px;
+    border: 1px solid #6666ff;
+    color: #6666ff;
+}
+
+
+#Program {
+    padding: 100px 0;
+}
+
+#Program .container {
+    display: block;
+}
+
+#Program h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 50px 0;
+}
+
+#Program .program_item {
+    display: flex;
+    gap: 30px;
+}
+
+#Program .program_item figure {
+    overflow: hidden;
+}
+
+#Program .program_item img {
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+#Program .program_item img:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
 }
