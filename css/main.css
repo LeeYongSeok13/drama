@@ -47,6 +47,10 @@
     font-weight: 500;
 }
 
+#Header.on {
+    background: #6666ff;
+}
+
 #Main {
     padding: 50px 0;
 }
@@ -135,7 +139,7 @@
     content: "";
     display: block;
     width: 1px;
-    height: 13px;
+    height: 11px;
     top: 50%;
     left: -15px;
     transform: translateY(-50%);
@@ -196,7 +200,7 @@
 #Information .information_main .left {
     float: left;
     width: calc(100% / 2);
-    height: 282.66px;
+    height: 288.66px;
 }
 
 #Information .information_main .left h2 {
@@ -207,6 +211,7 @@
 }
 
 #Information .information_main .left a {
+    display: inline-block;
     font-size: 13px;
     padding: 3px 15px;
     border: 1px solid #6666ff;
@@ -216,7 +221,7 @@
 #Information .information_main .right {
     float: left;
     width: calc(100% / 2);
-    height: 282.66px;
+    height: 288.66px;
 }
 
 #Information .information_main .right h2 {
@@ -237,6 +242,7 @@
 
 #Information .information_main .right .people figure img {
     border-radius: 50%;
+    margin: 0 0 10px 0;
 }
 
 #Information .information_main .right .people figure p {
@@ -244,10 +250,97 @@
 }
 
 #Information .information_main .right a {
+    display: inline-block;
     font-size: 13px;
     padding: 3px 15px;
     border: 1px solid #6666ff;
     color: #6666ff;
+}
+
+#Sns {
+    padding: 100px 0;
+}
+
+#Sns .container {
+    display: block;
+}
+
+#Sns .sns_main {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#Sns .sns_main h2 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 55px;
+}
+
+#Sns .sns_main .icon i {
+    font-size: 35px;
+    padding: 10px;
+    background: #ddd;
+    border-radius: 50%;
+}
+
+#Clip {
+    padding: 100px 0;
+}
+
+#Clip .container {
+    display: block;
+}
+
+#Clip .clip_head {
+    position: relative;
+    display: flex;
+    width: 1200px;
+    justify-content: space-between;
+    padding: 0 0 19px 0;
+    border-bottom: 1px solid #6666ff;
+}
+
+#Clip .clip_head h2 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#Clip .clip_head a {
+    display: inline-block;
+    align-items: center;
+    padding: 5px 15px;
+    border: 1px solid #6666ff;
+    color: #6666ff;
+}
+
+#Clip .clip_main {
+    display: flex;
+    margin: 20px 0 80px 0;
+    gap: 20px;
+}
+
+#Clip .clip_main figure {
+    position: relative;
+}
+
+#Clip .clip_main figure i {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 25px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.25);
+}
+
+#Clip .clip_main figure .time {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 15px;
+    color: #fff;
+    padding: 3px 15px;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 
@@ -259,27 +352,105 @@
     display: block;
 }
 
-#Program h2 {
+#Program .program_head {
+    position: relative;
+    display: flex;
+    width: 1200px;
+    justify-content: space-between;
+    padding: 0 0 19px 0;
+    border-bottom: 1px solid #6666ff;
+}
+
+#Program .program_head h2 {
     font-size: 30px;
     font-weight: 700;
-    margin: 0 0 50px 0;
+}
+
+#Program .program_head a {
+    display: inline-block;
+    align-items: center;
+    padding: 5px 15px;
+    border: 1px solid #6666ff;
+    color: #6666ff;
 }
 
 #Program .program_item {
     display: flex;
     gap: 30px;
+    margin: 20px 0 0 0;
 }
 
 #Program .program_item figure {
     overflow: hidden;
 }
 
-#Program .program_item img {
+#Program .program_item figure img {
     transform: scale(1);
     transition: 0.5s;
 }
 
-#Program .program_item img:hover {
-    transform: scale(1.2);
+#Program .program_item figure:hover img {
+    transform: scale(1.1);
     transition: 0.5s;
+}
+
+#Footer {
+    background: #333;
+    color: #fff;
+    padding: 100px 0;
+}
+
+#footer_top {
+    margin: 0 0 20px 0;
+}
+
+#footer_top ul {
+    display: flex;
+    gap: 25px;
+}
+
+#footer_top ul li {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+#footer_top ul li span {
+    font-weight: 500;
+}
+
+#footer_bottom .container {
+    display: block;
+}
+
+#footer_bottom .broadcast {
+    display: flex;
+}
+
+#footer_bottom .broadcast p {
+    font-size: 13px;
+    font-weight: 300;
+    margin: 0 50px 0 0;
+}
+
+#footer_bottom .broadcast ul {
+    display: flex;
+    gap: 20px;
+}
+
+#footer_bottom .broadcast ul li {
+    position: relative;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+#footer_bottom .broadcast ul li~li:before {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 50%;
+    left: -10px;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 8px;
+    background: #fff;
 }
